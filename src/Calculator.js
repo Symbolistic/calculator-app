@@ -287,6 +287,7 @@ class Calculator extends React.Component {
                         )
                     })}
                 </div>
+                <div id="info"><p>Copyright &copy; 2020 Created by V.S</p></div>
             </div>
         )
     }

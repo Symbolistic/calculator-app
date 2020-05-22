@@ -56,3 +56,9 @@
 #multiply {grid-area:multiply}
 #divide {grid-area:divide}
 #clear {grid-area:clear}
+
+#info {
+    color: whitesmoke;
+    text-align:center;
+    padding:20px;
+}
