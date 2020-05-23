@@ -14,14 +14,26 @@
 }
 
 #display-container {
-    height: 30vh;
+    height: 100%;
     width: 50vh;
     background-color: black;
     color: whitesmoke;
     text-align: right;
     font-size: 50px;
     padding: 20px 40px;
-    border: 4px solid whitesmoke
+    border: 4px solid whitesmoke;
+    overflow:hidden;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+}
+
+#output-display {
+    height:100%;
+    overflow:hidden;
+}
+
+#display {
+    height:100%;
 }
 
 #inputs {

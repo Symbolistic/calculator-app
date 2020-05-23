@@ -240,8 +240,8 @@ class Calculator extends React.Component {
                         
                         this.setState (prevState => {
                             return {
-                                currentInput: eval(currOutput),
-                                output: currOutput + input + eval(currOutput)
+                                currentInput: parseFloat(eval(prevState.output).toFixed(4)),
+                                output: currOutput + input + parseFloat(eval(prevState.output).toFixed(4))
                             }
                         })
                     }
@@ -265,8 +265,8 @@ class Calculator extends React.Component {
                 } else {
                     this.setState (prevState => {        
                         return {
-                            currentInput: eval(prevState.output),
-                            output: prevState.output + input + eval(prevState.output)
+                            currentInput: parseFloat(eval(prevState.output).toFixed(4)),
+                            output: prevState.output + input + parseFloat(eval(prevState.output).toFixed(4))
                         }
                     })
                 }
